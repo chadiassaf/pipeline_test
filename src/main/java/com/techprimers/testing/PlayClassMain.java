@@ -7,6 +7,6 @@ public class PlayClassMain {
     public static void main(String... args)
     {
         PlayClass p = new PlayClass();
-        p.play(10);
+        System.out.println("PlayClass = " + p.play(10));
     }
 }
