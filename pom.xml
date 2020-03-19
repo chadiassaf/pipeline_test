@@ -55,6 +55,7 @@
 
     </dependencies>
 
+
     <repositories>
         <repository>
             <id>myMavenRepo.read</id>
@@ -67,6 +68,10 @@
             <id>myMavenRepo.write</id>
             <url>https://mymavenrepo.com/repo/ZWxkMAX1kzCg2e0rrCum/</url>
         </repository>
+        <snapshotRepository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/ZWxkMAX1kzCg2e0rrCum/</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>

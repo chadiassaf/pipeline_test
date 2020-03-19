@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                
-                    bat  'D:\Projects\apache-maven-3.6.3\bin\mvn clean compile'
+                    bat  'D:\\Projects\\apache-maven-3.6.3\\bin\\mvn clean compile'
                
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
              
-                    bat  'D:\Projects\apache-maven-3.6.3\bin\mvn test'
+                    bat  'D:\\Projects\\apache-maven-3.6.3\\bin\\mvn test'
               
             }
         }
@@ -23,7 +23,7 @@ pipeline {
         stage ('installing Stage') {
             steps {
 
-                    bat  'D:\Projects\apache-maven-3.6.3\bin\mvn install'
+                    bat  'D:\\Projects\\apache-maven-3.6.3\\bin\\mvn install'
 
             }
         }
@@ -31,7 +31,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
 
-                    bat  'D:\Projects\apache-maven-3.6.3\bin\mvn deploy'
+                    bat  'D:\\Projects\\apache-maven-3.6.3\\bin\\mvn deploy'
 
             }
         }
