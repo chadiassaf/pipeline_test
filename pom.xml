@@ -61,18 +61,18 @@
     <repositories>
         <repository>
             <id>myMavenRepo.read</id>
-            <url>D:/Projects/test/read/</url>
+            <url>${myMavenRepo.read}</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
             <id>myMavenRepo.write</id>
-            <url>D:/Projects/test/write/</url>
+            <url>${myMavenRepo.write}</url>
         </repository>
         <snapshotRepository>
             <id>myMavenRepo.write</id>
-            <url>D:/Projects/test/write/</url>
+            <url>${myMavenRepo.write}</url>
         </snapshotRepository>
     </distributionManagement>
 
