@@ -1,4 +1,4 @@
-package com.techprimers.testing;
+package com.cassaf.testing;
 
 public class PlayClass {
 
