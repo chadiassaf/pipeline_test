@@ -1,7 +1,4 @@
-pipeline {
-    agent any
-    
-    stages {
+node {
         stage ('Compile Stage') {
             def compileStage="Hello worlds1"
             echo "Compile Stage : ${compileStage}"
@@ -12,5 +9,4 @@ pipeline {
                
             }
         }
-    }
 }
