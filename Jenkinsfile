@@ -3,36 +3,13 @@ pipeline {
     
     stages {
         stage ('Compile Stage') {
-
+            def compileStage="Hello worlds1"
+            echo "Compile Stage : ${compileStage}"
             steps {
                
+            echo "inside : ${compileStage}"
                     bat  'mvn clean compile'
                
-            }
-        }
-
-        stage ('Testing Stage') {
-
-            steps {
-             
-                    bat  'mvn test'
-              
-            }
-        }
-
-        stage ('installing Stage') {
-            steps {
-
-                    bat  'mvn install'
-
-            }
-        }
-
-        stage ('Deployment Stage') {
-            steps {
-
-                    bat  'mvn deploy'
-
             }
         }
     }
