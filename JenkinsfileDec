@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-      whoAmIVar = whoAmIFunc()
+      whoAmIVar = sh returnStdout: true, script: 'whoami'
     }
 
     stages {
@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo  'Compile Stage start'
                 echo  "${PATH}"
-                echo whoami
+                echo ${whoami}"
                 echo  'Compile Stage end'
             }
         }
