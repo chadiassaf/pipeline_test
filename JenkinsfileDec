@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo  'Compile Stage start'
                 echo  "${PATH}"
-                echo ${whoAmIVar}"
+                echo "${whoAmIVar}"
                 echo  'Compile Stage end'
             }
         }
