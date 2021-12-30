@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo  'Compile Stage start'
                 echo  "${PATH}"
-                echo  sh returnStdout: true, script: 'echo whoami'
+                echo  "${sh returnStdout: true, script: 'echo whoami'}"
                 echo  'Compile Stage end'
             }
         }
