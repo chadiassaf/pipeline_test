@@ -2,9 +2,8 @@ pipeline {
     agent any
     
     environment {
-      whoAmIVar = sh returnStdout: true, script: 'whoami'
-      
-        def varY = "CCCCC"
+      def whoAmIVar = sh returnStdout: true, script: 'whoami'
+      def varY = "CCCCC"
     }
 
     stages {
