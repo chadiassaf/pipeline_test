@@ -37,6 +37,6 @@ pipeline {
 
 def whoAmIFunc()
 {
-    def wxx =  sh returnStdout: true, script: 'echo whoami'
+    def wxx =  sh returnStdout: true, script: 'whoami'
     return wxx
 }
