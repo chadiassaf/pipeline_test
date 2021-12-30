@@ -5,7 +5,7 @@ pipeline {
         stage ('Compile Stage') {
             steps {
                 echo  'Compile Stage start'
-                  //ssh "echo  $PATH"
+                echo  "${PATH}"
                 echo  'Compile Stage end'
             }
         }
