@@ -1,6 +1,7 @@
 pipeline {
     agent any
     
+    def varY = "CCCCC"
     environment {
       whoAmIVar = sh returnStdout: true, script: 'whoami'
     }
@@ -10,7 +11,7 @@ pipeline {
             steps {
                 echo  'Compile Stage start'
                 echo  "${PATH}"
-                echo "${whoAmIVar}"
+                echo "${varY}"
                 echo  'Compile Stage end'
             }
         }
