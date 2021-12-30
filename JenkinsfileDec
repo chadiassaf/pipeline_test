@@ -7,11 +7,12 @@ pipeline {
 
     stages {
         stage ('Compile Stage') {
-            steps {
             
-                environment {
-                  def varY = "CCCCC"
-                }
+            environment {
+              def varY = "CCCCC"
+            }
+            
+            steps {
                 echo  'Compile Stage start'
                 echo  "${PATH}"
                 echo "${whoAmIVar}"
