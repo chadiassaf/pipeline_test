@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def wxx =  "sh returnStdout: true, script: 'echo whoami'"
+    def wxx =  sh returnStdout: true, script: 'echo whoami'
     
     stages {
         stage ('Compile Stage') {
