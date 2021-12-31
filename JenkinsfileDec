@@ -1,3 +1,5 @@
+currentBuild.displayName = "Chady's App " + currentBuild.number
+
 pipeline {
     agent any
     
